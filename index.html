@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS && TrackJS.install({ 
+      token: "57219ea5bfc94f73bf8593066690acfd"
+      // for more configuration options, see https://docs.trackjs.com
+    });
+  </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,14 +81,11 @@
       <button>Console Count</button>
       <button>Console Warn</button>
       <button>Console Assert</button>
-      <button>Console Clear</button>
-      <button>Console Dir</button>
-      <button>Console dirxml</button>
-      <button>Console Group Start</button>
-      <button>Console Group End</button>
       <button>Console Table</button>
-      <button>Start Timer</button>
-      <button>End Timer</button>
+      <button>Console Dir</button>
+      <button>Console Dirxml</button>
+      <button>Console Group</button>
+      <button>Console Time</button>
       <button>Console Trace</button>
       <button>Trigger a Global Error</button>
     </section>
@@ -100,9 +104,8 @@
 
     let errorBtns = Array.from(document.querySelectorAll('#error-btns > button'));
 
-    // Start your code here
-    // You may move this JS to another file if you wish
   </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
